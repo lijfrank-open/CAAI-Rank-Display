@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "CAAI-Rank-Display",
+    "description": "Extension name."
+  },
+  "extDesc": {
+    "message": "中国人工智能学会(CAAI)推荐的学术期刊和会议级别",
+    "description": "Extension description."
+  }
+}

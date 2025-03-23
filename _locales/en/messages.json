@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "CAAI-Rank-Display",
+    "description": "Extension name."
+  },
+  "extDesc": {
+    "message": "Ranks of Academic Journals and Conferences Recommended by CAAI",
+    "description": "Extension description."
+  }
+}

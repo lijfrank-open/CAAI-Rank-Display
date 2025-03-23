@@ -1,0 +1,58 @@
+.caai-rank {
+  display: inline-block;
+  height: 18.35px;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  border-radius: 9px;
+  padding: 1px 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.caai-a {
+  background-color: #e15f37;
+}
+
+.caai-b {
+  background-color: #f5bd42;
+}
+
+.caai-c {
+  background-color: #8eba3a;
+}
+
+.caai-e {
+  background-color: #4aa3ea;
+}
+
+.caai-p {
+  background-color: #6c757d;
+}
+
+.caai-none {
+  background-color: #6c757d;
+}
+
+.caai-tooltip {
+  display: inline-block;
+  position: relative;
+}
+
+.caai-tooltip .caai-tooltiptext {
+  visibility: hidden;
+  background-color: #007bff;
+  border-radius: 6px;
+  padding: 5px 5px;
+  bottom: 100%;
+  left: 50%;
+  position: absolute;
+  z-index: 980624;
+  margin-left: -60px;
+}
+
+.caai-tooltip:hover .caai-tooltiptext {
+  visibility: visible;
+}
