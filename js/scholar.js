@@ -12,7 +12,6 @@ scholar.run = function () {
   }
 };
 
-// dblp
 scholar.appendRank = function () {
   let elements = $("#gs_res_ccl_mid > div > div.gs_ri");
   elements.each(function (index) {
@@ -55,28 +54,28 @@ scholar.observeCitations = function () {
   }
 };
 
-// page
 scholar.appendRanks = function () {
-  let elements = $(".gsc_a_tr");
-  elements.each(function () {
-    let element = $(this);
-    let sourceNode = element.find("div.gs_gray:last-child");
-    let source = sourceNode.text().trim();
-    // console.log("source: ", source);
-
-    source = source.split(',')[0]
-                        .trim()
-                        .replace(/\s*\d+[a-zA-Z]*\s*/g, " ")
-                        .replace(/\s*\([^)]*\)\s*/g, " ")
-                        .replace(/[.:…]/g, "")
-                        .replace(/\barXiv preprint arXiv\b/g, "arXiv")
-                        .trim();
-    // console.log("source: ", source);
-
-    if (source.length > 0 && !element.next().hasClass("caai-rank")) {
-      for (let getRankSpan of scholar.rankSpanList) {
-        element.after(getRankSpan(source, "abbr"));
-      }
+  let elements = $("tr.gsc_a_tr");
+  elements.each(function (index) {
+    let node = $(this).find("td.gsc_a_t > a").first();
+    if (!node.next().hasClass("caai-rank") && !$(this).hasClass("caai-ranked")) {
+      // let title = node.text();
+      let title = node.text().replace(/\+/g, '-')
+      // console.log("titles: ", title);
+      let author = $(this)
+        .find("div.gs_gray")[0]
+        .innerText.replace(/[\†\‡\※\*\…\,\-]/g, "")
+        .split(" ").pop();
+      let year = $(this).find("td.gsc_a_y").text();
+      $(this).addClass("caai-ranked");
+      setTimeout(function () {
+        // console.log("node: ", node);
+        // console.log("title: ", title);
+        // console.log("author: ", author);
+        // console.log("year: ", year);
+        // console.log("scholar: ", scholar);
+        fetchRank(node, title, author, year, scholar);
+      }, 100 * index);
     }
   });
 };

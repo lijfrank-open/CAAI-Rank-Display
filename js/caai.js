@@ -1,7 +1,7 @@
 const caai = {};
 
 const checkConsecutiveWords = (key, targetWords, requiredCount) => {
-  const stopWords = new Set(["ON", "AND", "IN", "OF", "TO", "FOR", "A", "AN", "PROCEEDINGS"]);
+  const stopWords = new Set(["ON", "IN", "OF", "TO", "FOR", "A", "AN", "PROCEEDINGS"]);
   const keyWords = key.split(/[\s\-_]+/).map(w => w.toUpperCase()).filter(word => !stopWords.has(word));
   const targetSegments = targetWords.split(/[\s,]+/).map(w => w.toUpperCase()).filter(word => !stopWords.has(word));
   // console.log("key: ", key);
