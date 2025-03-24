@@ -24,12 +24,16 @@ connectedpapers.appendRanks = function () {
       let title = titleNode.text().replace(/\+/g, '-')
       // console.log("titles: ", title);
       // let author = authorNode.text().split(',')[0].split(' ')[1];
+      // let author = authorNode[0]
+      //   .innerText.replace(/[\†\‡\※\*\…\,\-]/g, "")
+      //   .split(" ")[1];
       let author = authorNode[0]
-        .innerText.replace(/[\†\‡\※\*\…\,\-]/g, "")
-        .split(" ")[1];
-      console.log("authors: ", author);
+        .innerText.split(", ")[0]
+        .replace(/[\†\‡\※\*\…\,\-]/g, "")
+        .split(" ").pop();
+      // console.log("authors: ", author);
       let year = yearNode.text();
-      console.log("years: ", year);
+      // console.log("years: ", year);
       $(this).addClass("caai-ranked");
       setTimeout(function () {
         fetchRank(node, title, author, year, connectedpapers);

@@ -64,7 +64,8 @@ scholar.appendRanks = function () {
       // console.log("titles: ", title);
       let author = $(this)
         .find("div.gs_gray")[0]
-        .innerText.replace(/[\†\‡\※\*\…\,\-]/g, "")
+        .innerText.split(", ")[0]
+        .replace(/[\†\‡\※\*\…\,\-]/g, "")
         .split(" ").pop();
       let year = $(this).find("td.gsc_a_y").text();
       $(this).addClass("caai-ranked");
