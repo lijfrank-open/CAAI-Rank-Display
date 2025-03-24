@@ -1,10 +1,13 @@
 const caai = {};
 
 const checkConsecutiveWords = (key, targetWords, requiredCount) => {
-  const stopWords = new Set(["ON", "AND", "IN", "OF", "TO", "FOR", "A", "AN"]);
+  const stopWords = new Set(["ON", "AND", "IN", "OF", "TO", "FOR", "A", "AN", "PROCEEDINGS"]);
   const keyWords = key.split(/[\s\-_]+/).map(w => w.toUpperCase()).filter(word => !stopWords.has(word));
   const targetSegments = targetWords.split(/[\s,]+/).map(w => w.toUpperCase()).filter(word => !stopWords.has(word));
-
+  // console.log("key: ", key);
+  // console.log("targetWords: ", targetWords);
+  // console.log("keyWords: ", keyWords);
+  // console.log("targetSegments: ", targetSegments);
   return targetSegments.length >= requiredCount && Array.from({ length: targetSegments.length - requiredCount + 1 }, (_, i) => {
     const segment = targetSegments.slice(i, i + requiredCount).join(' ');
     return keyWords.join(' ').includes(segment);
@@ -29,6 +32,7 @@ caai.getRankInfo = function (refine, type) {
       let full = caai.abbrFull[refine];
       if (full === undefined) {
         let refineTrimmed = refine.substring(0, refine.length - 1);
+        // let refineTrimmed = refine.substring(0, refine.length);
         // console.log("refineTrimmed: ", refineTrimmed);
         // let res = Object.keys(caai.fullUrl).find(k => k.startsWith(refineTrimmed.toUpperCase()));
         let res;
