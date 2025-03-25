@@ -12,29 +12,23 @@
   margin-right: 5px;
 }
 
-.caai-a {
-  background-color: #C44507;
-}
+/* 深海蓝（A类） */
+.caai-a { background-color: #bd4c64; }  
 
-.caai-b {
-  background-color: #FFE100;
-}
+/* 阳光黄（B类） */
+.caai-b { background-color: #7e5498; }  
 
-.caai-c {
-  background-color: #1A7F8F;
-}
+/* 青瓷蓝（C类） */
+.caai-c { background-color: #48649e; }  
 
-.caai-e {
-  background-color: #004E8C;
-}
+/* 蓝紫色（E类） */
+.caai-e { background-color: #23848a; }  
 
-.caai-p {
-  background-color: #7D3C98;
-}
+/* 火山橙（P类） */
+.caai-p { background-color: #bec407; }  
 
-.caai-none {
-  background-color: #7F8C8D;
-}
+/* 中性灰（none类） */
+.caai-none { background-color: #898b8b; }
 
 .caai-tooltip {
   display: inline-block;
