@@ -1,7 +1,7 @@
 # CAAI Rank Display
-Edge, Firefox, and Chrome extensions: display the rank of academic journals and conferences recommended by the Chinese Association for Artificial Intelligence (CAAI) in the search results of dblp, Google Scholar, Connected Papers, and Semantic Scholar.
+Edge, Firefox, and Chrome extensions: display the rank of academic journals and conferences recommended by the Chinese Association for Artificial Intelligence (CAAI) in the search results of dblp, Google Scholar, Connected Papers, AMiner, and Semantic Scholar.
 
-Edge、Firefox 和 Chrome 扩展程序：在 dblp、Google Scholar、Connected Papers和Semantic Scholar 的搜索结果中显示中国人工智能学会(CAAI)推荐的学术期刊和会议级别。
+Edge、Firefox 和 Chrome 扩展程序：在 dblp、Google Scholar、Connected Papers、AMiner和Semantic Scholar的搜索结果中显示中国人工智能学会(CAAI)推荐的学术期刊和会议级别。
 
 # Install
 1. Clone CAAI-Rank-Display to a directory.

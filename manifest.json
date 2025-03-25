@@ -1,6 +1,6 @@
 {
   "name": "__MSG_extName__",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "__MSG_extDesc__",
   "manifest_version": 3,
   "default_locale": "en",
@@ -106,6 +106,7 @@
         "https://www.connectedpapers.com/main/*",
         "https://www.webofscience.com/*",
         "https://www.semanticscholar.org/*",
+        "https://www.aminer.cn/*",
         "https://www.scopus.com/*"
       ],
       "css": ["css/style.css", "css/filter.css"],
@@ -115,6 +116,7 @@
         "js/connectedpapers.js",
         "js/scholar.js",
         "js/semanticscholar.js",
+        "js/aminer.js",
         "js/apiCache.js",
         "js/caai.js",
         "js/fetchRank.js",

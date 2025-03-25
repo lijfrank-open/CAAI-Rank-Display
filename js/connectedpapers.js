@@ -7,8 +7,24 @@ connectedpapers.run = function () {
   window.onload = function () {
       if (url.indexOf("/main") != -1) {
         connectedpapers.appendRanks();
+        connectedpapers.observeCitations();
       }
   };
+};
+
+connectedpapers.observeCitations = function () {
+  console.debug("Start citations ...");
+  const observer = new MutationObserver((mutationsList, observer) => {
+    for (const mutation of mutationsList) {
+      if (mutation.type === "childList" && mutation.addedNodes.length > 0) {
+        connectedpapers.appendRanks();
+      }
+    }
+  });
+  const targetNode = document.querySelector("items-list");
+  if (targetNode) {
+    observer.observe(targetNode, { childList: true, subtree: true });
+  }
 };
 
 connectedpapers.appendRanks = function () {
