@@ -18,6 +18,11 @@ aminer.run = function () {
       aminer.appendRanks();
       aminer.observeCitations();
     }, 700);
+  } else if (url.startsWith("/user/scholar")) {
+    setInterval(function () {
+      aminer.appendRanks();
+      aminer.observeCitations();
+    }, 700);
   } else if (url.startsWith("/search/pub")) {
     setInterval(function () {
       aminer.appendRankss();
