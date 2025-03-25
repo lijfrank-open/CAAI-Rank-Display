@@ -5,11 +5,15 @@ scopus.rankSpanList = [];
 scopus.run = function () {
   let url = window.location.pathname;
   if (url.startsWith("/authid/")) {
-    scopus.appendRank();
-    scopus.observeCitation();
+    setInterval(function () {
+      scopus.appendRank();
+      scopus.observeCitation();
+    }, 700);
   } else if (url.startsWith("/results/")) {
-    scopus.appendRanks();
-    scopus.observeCitations();
+    setInterval(function () {
+      scopus.appendRanks();
+      scopus.observeCitations();
+    }, 700);
   }
 };
 

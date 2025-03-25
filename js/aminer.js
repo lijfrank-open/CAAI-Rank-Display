@@ -5,15 +5,24 @@ aminer.rankSpanList = [];
 aminer.run = function () {
   let url = window.location.pathname;
   if (url == "/") {
-    aminer.appendRank();
-    aminer.observeCitation();
+    setInterval(function () {
+      aminer.appendRank();
+      aminer.observeCitation();
+    }, 700);
   } else if (url.startsWith("/profile/")) {
-    aminer.appendRanks();
-    aminer.observeCitations();
-  }
-  else if (url.startsWith("/search/pub")) {
-    aminer.appendRankss();
-    aminer.observeCitationss();
+    setInterval(function () {
+      // $(window).bind("popstate", function () {
+      //   aminer.appendRanks();
+      //   aminer.observeCitations();
+      // });
+      aminer.appendRanks();
+      aminer.observeCitations();
+    }, 700);
+  } else if (url.startsWith("/search/pub")) {
+    setInterval(function () {
+      aminer.appendRankss();
+      aminer.observeCitationss();
+    }, 700);
   }
 };
 

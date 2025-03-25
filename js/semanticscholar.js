@@ -5,15 +5,21 @@ semanticscholar.rankSpanList = [];
 semanticscholar.run = function () {
   let url = window.location.pathname;
   if (url.startsWith("/me/research")) {
-    semanticscholar.appendRank();
-    semanticscholar.observeCitation();
+    setInterval(function () {
+      semanticscholar.appendRank();
+      semanticscholar.observeCitation();
+    }, 700);
   } else if (url.startsWith("/paper/")) {
-    semanticscholar.appendRanks();
-    semanticscholar.observeCitations();
+    setInterval(function () {
+      semanticscholar.appendRanks();
+      semanticscholar.observeCitations();
+    }, 700);
   }
   else if (url.startsWith("/search")) {
-    semanticscholar.appendRankss();
-    semanticscholar.observeCitationss();
+    setInterval(function () {
+      semanticscholar.appendRankss();
+      semanticscholar.observeCitationss();
+    }, 700);
   }
 };
 

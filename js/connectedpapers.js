@@ -6,8 +6,10 @@ connectedpapers.run = function () {
   let url = window.location.pathname;
   window.onload = function () {
       if (url.indexOf("/main") != -1) {
-        connectedpapers.appendRanks();
-        connectedpapers.observeCitations();
+        setInterval(function () {
+          connectedpapers.appendRanks();
+          connectedpapers.observeCitations();
+        }, 700);
       }
   };
 };
