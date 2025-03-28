@@ -101,7 +101,8 @@ function fetchFromDblpApi(query_url, node, title, authorA, year, site) {
 
 function processDblpUrl(dblp_url, resp, resp_flag, node, site) {
   if (typeof dblp_url == "undefined" && resp_flag != false) {
-    dblp_abbr = resp.hit[0].info.number;
+    // dblp_abbr = resp.hit[0].info.number;
+    dblp_abbr = resp?.hit?.[0]?.info?.number ?? null;
     if (typeof dblp_abbr != "undefined" && isNaN(dblp_abbr)) {
     } else {
       dblp_abbr = resp.hit[0].info.venue;
