@@ -1,4 +1,9 @@
-
+/*
+ * apiCache.js
+ *
+ * Author:      mra42, dozed
+ * License:     MIT License
+*/
 
 // cached values become stale after (86400000 = 24h) millisecs
 const expiresAfter = 86400000;

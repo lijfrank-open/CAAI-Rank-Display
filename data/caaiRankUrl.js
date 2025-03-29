@@ -1,3 +1,12 @@
+/*
+ * caaiRankUrl.js
+ *
+ * Author:      Frank Lee (Jiang Li)
+ * Website:     https://lijfrank.github.io/
+ * Repository:  https://github.com/lijfrank-open/CAAI-Rank-Display/
+ * License:     MIT License
+*/
+
 caai.rankUrl = {
   "/conf/aaai/aaai": "A",
   "/conf/cicai/cicai": "A",

@@ -1,3 +1,10 @@
+/*
+ * dblp.js
+ *
+ * Author:      WenyanLiu, FlyingFog
+ * License:     MIT License
+*/
+
 const dblp = {};
 
 dblp.rankSpanList = [];

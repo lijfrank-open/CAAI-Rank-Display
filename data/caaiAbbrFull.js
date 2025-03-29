@@ -1,3 +1,12 @@
+/*
+ * caaiAbbrFull.js
+ *
+ * Author:      Frank Lee (Jiang Li)
+ * Website:     https://lijfrank.github.io/
+ * Repository:  https://github.com/lijfrank-open/CAAI-Rank-Display/
+ * License:     MIT License
+*/
+
 caai.abbrFull = {
   "AAAI": "AAAI Conference on Artificial Intelligence",
   "CICAI": "CAAI International Conference on Artificial Intelligence",

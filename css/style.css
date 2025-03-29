@@ -12,22 +12,16 @@
   margin-right: 5px;
 }
 
-/* 深海蓝（A类） */
 .caai-a { background-color: #bd4c64; }  
 
-/* 阳光黄（B类） */
 .caai-b { background-color: #7e5498; }  
 
-/* 青瓷蓝（C类） */
 .caai-c { background-color: #48649e; }  
 
-/* 蓝紫色（E类） */
 .caai-e { background-color: #23848a; }  
 
-/* 火山橙（P类） */
 .caai-p { background-color: #bec407; }  
 
-/* 中性灰（none类） */
 .caai-none { background-color: #898b8b; }
 
 .caai-tooltip {

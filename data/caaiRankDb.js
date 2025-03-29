@@ -1,3 +1,12 @@
+/*
+ * caaiRankDb.js
+ *
+ * Author:      Frank Lee (Jiang Li)
+ * Website:     https://lijfrank.github.io/
+ * Repository:  https://github.com/lijfrank-open/CAAI-Rank-Display/
+ * License:     MIT License
+*/
+
 caai.rankDb = {
   "/conf/aaai": "/conf/aaai/aaai",
   "/conf/cicai": "/conf/cicai/cicai",

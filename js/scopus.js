@@ -1,3 +1,12 @@
+/*
+ * scopus.js
+ *
+ * Author:      Frank Lee (Jiang Li)
+ * Website:     https://lijfrank.github.io/
+ * Repository:  https://github.com/lijfrank-open/CAAI-Rank-Display/
+ * License:     MIT License
+*/
+
 const scopus = {};
 
 scopus.rankSpanList = [];

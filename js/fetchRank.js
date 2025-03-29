@@ -1,3 +1,12 @@
+/*
+ * fetchRank.js
+ *
+ * Author:      WenyanLiu, FlyingFog, mra42, dozed, Frank Lee (Jiang Li)
+ * Website:     https://lijfrank.github.io/
+ * Repository:  https://github.com/lijfrank-open/CAAI-Rank-Display/
+ * License:     MIT License
+*/
+
 function fetchRank(node, title, authorA, year, site) {
   const manifest = chrome.runtime.getManifest();
   const version = manifest.version;

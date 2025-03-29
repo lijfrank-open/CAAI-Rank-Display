@@ -1,3 +1,12 @@
+/*
+ * dataGen.js
+ *
+ * Author:      Frank Lee (Jiang Li)
+ * Website:     https://lijfrank.github.io/
+ * Repository:  https://github.com/lijfrank-open/CAAI-Rank-Display/
+ * License:     MIT License
+*/
+
 const caaiRankList = 
   "A	AAAI	AAAI Conference on Artificial Intelligence	/conf/aaai	/conf/aaai/aaai\n" +
   "A	CICAI	CAAI International Conference on Artificial Intelligence	/conf/cicai	/conf/cicai/cicai\n" +
@@ -413,7 +422,8 @@ const caaiRankList =
   "C		数据采集与处理	/sjcjycl/home	/sjcjycl/home/home\n" +
   "C		数据分析与知识发现	/2096-3467/home.shtml	/2096-3467/home.shtml/home.shtml\n" +
   "C		计算机集成制造系统	www.cims-journal.cn	www.cims-journal.cn/www.cims-journal.cn\n" +
-  "P		arXiv	/journals/corr	/journals/corr/corr";
+  "P		arXiv	/journals/corr	/journals/corr/corr"
+;
 
 var caaiRankFull = {};
 var caaiRankAbbr = {};

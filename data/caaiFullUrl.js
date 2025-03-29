@@ -1,3 +1,12 @@
+/*
+ * caaiFullUrl.js
+ *
+ * Author:      Frank Lee (Jiang Li)
+ * Website:     https://lijfrank.github.io/
+ * Repository:  https://github.com/lijfrank-open/CAAI-Rank-Display/
+ * License:     MIT License
+*/
+
 caai.fullUrl = {
   "AAAI Conference on Artificial Intelligence": "/conf/aaai/aaai",
   "CAAI International Conference on Artificial Intelligence": "/conf/cicai/cicai",

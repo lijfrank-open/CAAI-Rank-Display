@@ -1,3 +1,12 @@
+/*
+ * caaiRankAbbr.js
+ *
+ * Author:      Frank Lee (Jiang Li)
+ * Website:     https://lijfrank.github.io/
+ * Repository:  https://github.com/lijfrank-open/CAAI-Rank-Display/
+ * License:     MIT License
+*/
+
 caai.rankAbbrName = {
   "/conf/aaai/aaai": "AAAI",
   "/conf/cicai/cicai": "CICAI",
