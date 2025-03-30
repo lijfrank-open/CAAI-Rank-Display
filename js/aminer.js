@@ -87,6 +87,30 @@ aminer.observeCitationss = function () {
 
 // 
 aminer.appendRank = function () {
+  let elements_ = $(".a-core-home2-c-chat-g-p-t-item");
+  // console.log("elements: ", elements);
+  elements_.each(function (index) {
+    let element = $(this);
+    let titleNode = element.find("div.a-core-home2-c-chat-g-p-t-infoBox > a");
+    if (!titleNode.next().hasClass("caai-rank") && !$(this).hasClass("caai-ranked")) {
+      let authorNode = element.find("div.authors");
+      let yearNode = element.find("div.a-core-home2-c-chat-g-p-t-infoBox > span");
+      let title = titleNode.text().replace(/\+/g, '-').trim();
+      // console.log("title_: ", title);
+      let author = authorNode.text().trim()
+      .split(/,\s*/)[0]
+      .split(/\s+/).pop();
+      // console.log("authorNode: ", authorNode.text());
+      // console.log("author_: ", author);
+      let year = yearNode.text().match(/\d{4}/);
+      year = year ? year[0].trim() : "";
+      // console.log("year_: ", year);
+      element.addClass("caai-ranked");
+      setTimeout(function () {
+        fetchRank(titleNode, title, author, year, aminer);
+      }, 100 * index);
+    }
+  });
   let elements = $(".paper-item");
   // console.log("elements: ", elements);
   elements.each(function (index) {
